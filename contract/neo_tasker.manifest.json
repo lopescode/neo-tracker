@@ -1,0 +1,46 @@
+{
+    "name": "neo_tasker",
+    "groups": [],
+    "abi": {
+        "methods": [
+            {
+                "name": "create_task",
+                "offset": 0,
+                "parameters": [
+                    {
+                        "type": "ByteArray",
+                        "name": "task_id"
+                    },
+                    {
+                        "type": "ByteArray",
+                        "name": "task_data"
+                    }
+                ],
+                "safe": false,
+                "returntype": "Boolean"
+            },
+            {
+                "name": "get_task",
+                "offset": 27,
+                "parameters": [
+                    {
+                        "type": "ByteArray",
+                        "name": "task_id"
+                    }
+                ],
+                "safe": false,
+                "returntype": "ByteArray"
+            }
+        ],
+        "events": []
+    },
+    "permissions": [],
+    "trusts": [],
+    "features": {},
+    "supportedstandards": [],
+    "extra": {
+        "Author": "Lopes",
+        "Email": "lopes@example.com",
+        "Description": "NeoTasker: manage tasks on the blockchain"
+    }
+}
