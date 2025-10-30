@@ -9,9 +9,36 @@ def create_task() -> bool:
 
 @public
 def get_task() -> bytes:
-    value = storage.get(b'hello')    
+    task = storage.get(b'hello') 
+
+    print(task)   
    
-    return value
+    return task
+
+@public
+def complete_task() -> bool:
+    task = storage.get(b'hello')
+
+    if task is None or task == b'':
+        return False
+
+    # Adding a marker to indicate the task is completed
+    completed_task = task + b'_completed'
+
+    storage.put(b'hello', completed_task)
+    
+    return True
+
+@public
+def delete_task() -> bool:
+    task = storage.get(b'hello')
+
+    if task is None or task == b'':
+        return False
+    
+    storage.delete(b'hello')
+    
+    return True
 
 def manifest() -> NeoMetadata:
     meta = NeoMetadata()

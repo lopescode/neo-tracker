@@ -16,6 +16,20 @@
                 "parameters": [],
                 "safe": false,
                 "returntype": "ByteArray"
+            },
+            {
+                "name": "complete_task",
+                "offset": 85,
+                "parameters": [],
+                "safe": false,
+                "returntype": "Boolean"
+            },
+            {
+                "name": "delete_task",
+                "offset": 219,
+                "parameters": [],
+                "safe": false,
+                "returntype": "Boolean"
             }
         ],
         "events": []
