@@ -12,27 +12,37 @@
             },
             {
                 "name": "get_task",
-                "offset": 26,
+                "offset": 65,
                 "parameters": [],
                 "safe": false,
                 "returntype": "ByteArray"
             },
             {
                 "name": "complete_task",
-                "offset": 85,
+                "offset": 185,
                 "parameters": [],
                 "safe": false,
                 "returntype": "Boolean"
             },
             {
                 "name": "delete_task",
-                "offset": 219,
+                "offset": 343,
                 "parameters": [],
                 "safe": false,
                 "returntype": "Boolean"
             }
         ],
-        "events": []
+        "events": [
+            {
+                "name": "notify",
+                "parameters": [
+                    {
+                        "name": "state",
+                        "type": "Any"
+                    }
+                ]
+            }
+        ]
     },
     "permissions": [],
     "trusts": [],
