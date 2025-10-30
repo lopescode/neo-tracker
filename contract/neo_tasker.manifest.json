@@ -6,28 +6,14 @@
             {
                 "name": "create_task",
                 "offset": 0,
-                "parameters": [
-                    {
-                        "type": "ByteArray",
-                        "name": "task_id"
-                    },
-                    {
-                        "type": "ByteArray",
-                        "name": "task_data"
-                    }
-                ],
+                "parameters": [],
                 "safe": false,
                 "returntype": "Boolean"
             },
             {
                 "name": "get_task",
-                "offset": 27,
-                "parameters": [
-                    {
-                        "type": "ByteArray",
-                        "name": "task_id"
-                    }
-                ],
+                "offset": 26,
+                "parameters": [],
                 "safe": false,
                 "returntype": "ByteArray"
             }
