@@ -1,0 +1,16 @@
+{
+  "name": "neo-tasker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "invoke.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node invoke.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cityofzion/neon-js": "^5.8.0"
+  }
+}

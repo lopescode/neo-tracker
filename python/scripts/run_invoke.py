@@ -38,15 +38,15 @@ def invoke(method_path: str, *args) -> bool:
 if __name__ == "__main__":
     invoke("invoke_create_task")
 
-    time.sleep(15)
-    invoke("invoke_get_task", "--results")
+    # time.sleep(15)
+    # invoke("invoke_get_task", "--results")
 
-    invoke("invoke_complete_task")
+    # invoke("invoke_complete_task")
     
-    time.sleep(15)
-    invoke("invoke_get_task", "--results")
+    # time.sleep(15)
+    # invoke("invoke_get_task", "--results")
 
-    invoke("invoke_delete_task")
+    # invoke("invoke_delete_task")
     
-    time.sleep(15)
-    invoke("invoke_get_task", "--results")
+    # time.sleep(15)
+    # invoke("invoke_get_task", "--results")
